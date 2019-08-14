@@ -1,0 +1,122 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+  <script src="components/loader.js"></script>
+  <script src="lib/onsenui/js/onsenui.min.js"></script>
+
+  <script src="components/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <script src="components/acao.js"></script>
+  <script src="components/bootstrap.js"></script>
+
+  <script src="https://kit.fontawesome.com/be184030a6.js"></script><!-- link font awesome-->
+  <link rel="stylesheet" href="components/loader.css">
+  <link rel="stylesheet" href="lib/onsenui/css/onsenui.css">
+  <link rel="stylesheet" href="lib/onsenui/css/onsen-css-components.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+    <!-- Container --> 
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="form-group">
+            <h1 class="textalign">Lista de livros</h1>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="form-group">
+              <select class="form-control">
+                <option selected disabled>Escolha um livro da lista</option>
+              </select>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="form-group">
+              <label>código do livro:</label>
+              <input type="number" class="form-control" id="titulo" readonly>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="form-group">
+              <label>Título do livro:</label>
+              <input type="text" class="form-control" id="titulo" readonly>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="form-group">
+              <label>Autor do livro:</label>
+              <input type="text" class="form-control" id="autor" readonly>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="form-group">
+              <label>Ano:</label>
+              <input type="number" class="form-control" id="ano" readonly>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-xs-12">
+            <div class="form-group">
+              <label for="">Imagem:</label>
+              <img id="imagem" class="img-responsive">
+            </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-xs-3">
+          <div class="form-group">
+              <button class="btn btn-info btn-block" id="editar"><i class="fas fa-pen"></i></button>
+          </div>
+        </div>
+
+        <div class="col-xs-3">
+          <div class="form-group">
+              <button class="btn btn-warning btn-block" id="cancelarEdit"><i class="fas fa-times"></i></button>
+          </div>
+        </div>
+
+        <div class="col-xs-3">
+          <div class="form-group">
+              <button class="btn btn-danger btn-block" id="excluir"><i class="fas fa-trash-alt"></i></button>
+          </div>
+        </div>
+
+        <div class="col-xs-3">
+          <div class="form-group">
+              <button class="btn btn-success btn-block" id="salvarEdit"><i class="fas fa-save"></i></button>
+          </div>
+        </div>
+
+    </div>
+
+  </div>
+
+
+
+
+</div>
+</body>
+</html>
