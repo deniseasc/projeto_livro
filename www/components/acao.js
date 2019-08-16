@@ -86,7 +86,9 @@ function preencherLista(){
             $.each(data.livros, function(i, dados){
               itemlista+="<option value='"+dados.codigo+"'>"+dados.titulo+"</option>";
             });
-            $("#listalivros").html(itemlista);
+            var option = '<option selected disabled>Escolha um livro da lista</option>';
+
+            $("#listalivros").html(option+itemlista);
         },
         //se der errado
         error: function(data){
@@ -132,6 +134,7 @@ $(document).on("click","#excluir",function(){
         data:parametro,
         //se der certo
         success: function(data){
+          navigator.notification.alert(data);
            location.reload();
         },
         //se der errado
@@ -155,8 +158,8 @@ $(document).on("click","#salvarEdit",function(){
         data:parametros,//o que enviar
         //se der certo
         success: function(data){
-            navigator.notification.alert("msg:"+data);
-           location.reload();
+          navigator.notification.alert(data);
+          location.reload();
         },
         //se der errado
         error: function(data){

@@ -20,6 +20,9 @@
   <link rel="stylesheet" href="css/bootstrap.min.css">
 </head>
 <body>
+  <script>
+    preencherLista();
+  </script>
     <div class="container">
     <!-- Container --> 
       <div class="row">
@@ -33,8 +36,8 @@
       <div class="row">
         <div class="col-xs-12">
           <div class="form-group">
-              <select class="form-control">
-                <option selected disabled>Escolha um livro da lista</option>
+              <select id="listalivros" class="form-control">
+                
               </select>
           </div>
         </div>
@@ -44,7 +47,7 @@
         <div class="col-xs-12">
           <div class="form-group">
               <label>código do livro:</label>
-              <input type="number" class="form-control" id="titulo" readonly>
+              <input type="number" class="form-control" id="codigo" readonly>
           </div>
         </div>
       </div>
